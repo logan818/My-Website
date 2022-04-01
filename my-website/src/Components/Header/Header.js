@@ -5,14 +5,18 @@ import { FaGithub } from "react-icons/fa"
 
 function Header() {
     return (
-        //Header -> Header-brand, nav-left -> About Me, Contact Me
+
+        <div class="row">
+
         <div class="header header-fixed unselectable header-animated">
 
+        <div class="col-12">
             <div class="header-brand">
                 <div class="nav-item">
-                    <h5>Logan Calhoun</h5>
+                    <h5 class="uppercase">Logan Calhoun</h5>
                 </div>
             </div>
+        </div>
 
             <div class="nav-right">
                 <div class="nav-item">
@@ -32,6 +36,7 @@ function Header() {
                 </div>
             </div>
         </div>
+    </div>
     );
 }
 
