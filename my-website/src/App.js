@@ -7,14 +7,14 @@ import React from "react";
 import './App.css';
 import 'cirrus-ui'; 
 import Header from './Components/Header/Header';
-//import SplashScreen from './Components/Splash Screen/Splash-Screen';
+import SplashScreen from './Components/Splash Screen/Splash-Screen';
 
 // Shitty Test #1
 /* Testing export Default Function
 function App() {
   return (
     
-    //remove class="App" from container div, website still worked 
+     remove class="App" from container div, website still worked 
     <div>
       <div>
       <Header />
@@ -32,6 +32,9 @@ export default function App(){
   return(
     <div>
       <Header />
+
+      /* I want this splash screen to change depending on the button click in the header */
+      <SplashScreen />
     </div>
   );
 }
