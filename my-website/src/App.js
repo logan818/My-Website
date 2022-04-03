@@ -7,7 +7,7 @@ import {
 import './App.css';
 import 'cirrus-ui'; 
 import Header from './Components/Header/Header';
-import SplashScreen from './Components/Splash Screen/Splash-Screen';
+import SplashScreen from './Pages/Splash Screen/Splash-Screen';
 import Home from "./Pages/Home"
 
 // Shitty Test #1
@@ -29,25 +29,31 @@ export default App;
 */
 
 // Please fucking work test #2
-/* Nope
+//This ended up working
+//all within <main> then will be different routes within switch depending on what was clicked 
+//within header
+const component = {
+  "Splashscreen": <SplashScreen/>,
+//  "AboutMe": <AboutMe />
+}
+
 export default function App(){
   return(
     <div>
+      <main>
       <Header />
-
-       I want this splash screen to change depending on the button click in the header 
-      router oversees the Components defined by the routes
-      <Router>
+      <switch>
         
-      </Router>
-      <SplashScreen />
+        <route path="/" component='Splashscreen' exact/>
+      </switch>
+      </main>
     </div>
   );
 }
-*/
+
 
 //Take #3
-
+/*
 const App = () =>{
   return(
     <div>
@@ -62,3 +68,4 @@ const App = () =>{
 }
 
 export default App
+ */
